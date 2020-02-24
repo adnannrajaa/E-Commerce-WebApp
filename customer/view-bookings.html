@@ -88,11 +88,12 @@
   </div>
 </div>
 <body class="landing-page sidebar-collapse">
-  <nav class="navbar navbar-color-on-scroll fixed-top navbar-expand-lg" color-on-scroll="100" id="sectionsNav">
+  <nav class="navbar bg-default navbar-color-on-scroll fixed-top navbar-expand-lg" color-on-scroll="100"
+    id="sectionsNav">
     <div class="container">
       <div class="navbar-translate">
-        <a class="navbar-brand" href="https://demos.creative-tim.com/material-kit/index.html">
-          Vendor Profile </a>
+        <a class="navbar-brand pt-0" href="Landing.html">
+          <img src="../assets/img/logo.png" height="50" width="auto"> </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" aria-expanded="false"
           aria-label="Toggle navigation">
           <span class="sr-only">Toggle navigation</span>
@@ -103,43 +104,38 @@
       </div>
       <div class="collapse navbar-collapse">
         <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" rel="tooltip" title="Cart" data-placement="bottom" href="./cart.html" target="_blank"
+              data-original-title="">
+              <i class="fa fa-shopping-cart"></i>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./view-bookings.html">
+              Bookings
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="view-vendors.html">
+              Vendors
+            </a>
+          </li>
           <li class="dropdown nav-item">
             <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown">
-              <i class="material-icons">apps</i> Components
+              John Doe <img src="../assets/img/faces/avatar.jpg" height="50px" width="40px" alt="Circle Image"
+                class="rounded-circle img-fluid">
             </a>
             <div class="dropdown-menu dropdown-with-icons">
-              <a href="../index.html" class="dropdown-item">
-                <i class="material-icons">layers</i> All Components
+              <a href="./customer-profile.html" class="dropdown-item">
+                <i class="material-icons">account_circle</i> Profile
               </a>
-              <a href="https://demos.creative-tim.com/material-kit/docs/2.1/getting-started/introduction.html"
-                class="dropdown-item">
-                <i class="material-icons">content_paste</i> Documentation
+              <a href="#" class="dropdown-item">
+                <i class="material-icons">settings</i> Settings
+              </a>
+              <a href="#" class="dropdown-item">
+                <i class="material-icons">input</i> Log out
               </a>
             </div>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="javascript:void(0)" onclick="scrollToDownload()">
-              <i class="material-icons">cloud_download</i> Download
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" rel="tooltip" title="" data-placement="bottom" href="https://twitter.com/CreativeTim"
-              target="_blank" data-original-title="Follow us on Twitter">
-              <i class="fa fa-twitter"></i>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" rel="tooltip" title="" data-placement="bottom"
-              href="https://www.facebook.com/CreativeTim" target="_blank" data-original-title="Like us on Facebook">
-              <i class="fa fa-facebook-square"></i>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" rel="tooltip" title="" data-placement="bottom"
-              href="https://www.instagram.com/CreativeTimOfficial" target="_blank"
-              data-original-title="Follow us on Instagram">
-              <i class="fa fa-instagram"></i>
-            </a>
           </li>
         </ul>
       </div>

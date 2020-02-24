@@ -40,7 +40,7 @@
   id="sectionsNav">
   <div class="container">
     <div class="navbar-translate">
-      <a class="navbar-brand pt-0" href="Landing.html">
+      <a class="navbar-brand pt-0" href="https://demos.creative-tim.com/material-kit/index.html">
         <img src="../assets/img/logo.png" height="50" width="auto"> </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" aria-expanded="false"
         aria-label="Toggle navigation">
@@ -52,20 +52,20 @@
     </div>
     <div class="collapse navbar-collapse">
       <ul class="navbar-nav ml-auto">
-        <li class="nav-item">
+        <!-- <li class="nav-item">
           <a class="nav-link" rel="tooltip" title="Cart" data-placement="bottom" href="./cart.html" target="_blank"
             data-original-title="">
             <i class="fa fa-shopping-cart"></i>
+          </a>
+        </li> -->
+        <li class="nav-item">
+          <a class="nav-link" href="customer-list.html">
+            Cutomers
           </a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="./view-bookings.html">
             Bookings
-          </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="view-vendors.html">
-            Vendors
           </a>
         </li>
 
@@ -75,7 +75,7 @@
               class="rounded-circle img-fluid">
           </a>
           <div class="dropdown-menu dropdown-with-icons">
-            <a href="./customer-profile.html" class="dropdown-item">
+            <a href="vendor-profile.html" class="dropdown-item">
               <i class="material-icons">account_circle</i> Profile
             </a>
             <a href="#" class="dropdown-item">
@@ -137,14 +137,14 @@
             <div class="col-md-4">
               <div class="card card-profile">
                 <div class="card-avatar">
-                  <a href="service-detail.html">
+                 
                     <img class="img" src="../assets/img/faces/marc.jpg" />
-                  </a>
+         
                   <!-- <div style="position: absolute; right: -246px; height: 20px; left: 0;top: 15px;"> -->
                     <div style="position: absolute; right: 0px; height: 20px; left: 0;top: 15px;">
                     <div class="user-online-indicator is-online " data-user-id="73523321">
                       <!-- <i class="fa fa-circle"></i> -->
-                      <!-- react-text: 5 -->online<!-- /react-text --></div></div>
+                      <!-- react-text: 5 -->Available<!-- /react-text --></div></div>
                 </div>
                 <div class="card-body">
                   <h6 class="card-category text-gray">CEO / Co-Founder</h6>
@@ -152,7 +152,24 @@
                   <p class="card-description">
                     Don't be scared of the truth because we need to restart the human foundation in truth And I love you like Kanye loves Kanye I love Rick Owens’ bed design but the back is...
                   </p>
-                  <a href="service-detail.html" class="btn btn-primary btn-round">Contact Me</a>
+                  <hr/>
+                  <p>Some personal Info About Vendor</p>
+                  <hr />
+                  <select name="" id="avalability" class="form-control">
+                    <option>Change your status</option>
+                    <option>Available</option>
+                    <option>Currently Busy</option>
+                    <option>Closed</option>
+                    <option>Available on Specific Days</option>
+                  </select>
+
+                  <select name="" id="selectDays" class="form-control" hidden>
+                    <option>Select Days</option>
+                    <option>Monday</option>
+                    <option>Tuesday</option>
+                    <option>Wednesday</option>
+                    <option>Thursday etc</option>
+                  </select>
                 </div>
               </div>
             </div>
@@ -169,13 +186,22 @@
                 <div class="card card-profile">
                   <div class="card-body">
                     <p class="card-description">
+                      <a href="service-detail.html">
                     <img src="../assets/img/faces/avatar.jpg" alt="Denim Jeans" style="width:100%">
-
+</a>
                      </p>
                     <h4 class="card-title">Alec Thompson</h4>
-                    <p class="price">$19.99</p>
+                    <div class="row">
+                      <div class="col-6">
+                        <p class="price"><input type="text" class="form-control text-center" value="$19.99" /></p>
+                      </div>
+                      <div class="col-6">
+                        <p class="price"><input type="text" class="form-control text-center" value="20 items" /></p>
+
+                      </div>
+
+                    </div>
                     <p>Some text about the jeans.</p>
-                    <a href="service-detail.html" class="btn btn-primary btn-round">Book Now</a>
                   </div>
                 </div>
               </div>
@@ -183,13 +209,22 @@
                 <div class="card card-profile">
                   <div class="card-body">
                     <p class="card-description">
+                      <a href="service-detail.html">
                     <img src="../assets/img/faces/kendall.jpg" alt="Denim Jeans" style="width:100%">
-
+</a>
                      </p>
                     <h4 class="card-title">Alec Thompson</h4>
-                    <p class="price">$19.99</p>
+                    <div class="row">
+                      <div class="col-6">
+                        <p class="price"><input type="text" class="form-control text-center" value="$19.99" /></p>
+                      </div>
+                      <div class="col-6">
+                        <p class="price"><input type="text" class="form-control text-center" value="20 items" /></p>
+
+                      </div>
+
+                    </div>
                     <p>Some text about the jeans.</p>
-                    <a href="service-detail.html" class="btn btn-primary btn-round">Book Now</a>
                   </div>
                 </div>
               </div>
@@ -197,13 +232,22 @@
                 <div class="card card-profile">
                   <div class="card-body">
                     <p class="card-description">
+                      <a href="service-detail.html">
                     <img src="../assets/img/faces/christian.jpg" alt="Denim Jeans" style="width:100%">
-
+</a>
                      </p>
                     <h4 class="card-title">Alec Thompson</h4>
-                    <p class="price">$19.99</p>
+                    <div class="row">
+                      <div class="col-6">
+                        <p class="price"><input type="text" class="form-control text-center" value="$19.99" /></p>
+                      </div>
+                      <div class="col-6">
+                        <p class="price"><input type="text" class="form-control text-center" value="20 items" /></p>
+
+                      </div>
+
+                    </div>
                     <p>Some text about the jeans.</p>
-                  <a href="service-detail.html" class="btn btn-primary btn-round">Book Now</a>
                   </div>
                 </div>
               </div>
@@ -211,13 +255,22 @@
                 <div class="card card-profile">
                   <div class="card-body">
                     <p class="card-description">
+                      <a href="service-detail.html">
                     <img src="../assets/img/faces/kendall.jpg" alt="Denim Jeans" style="width:100%">
-
+</a>
                      </p>
                     <h4 class="card-title">Alec Thompson</h4>
-                    <p class="price">$19.99</p>
+                    <div class="row">
+                      <div class="col-6">
+                        <p class="price"><input type="text" class="form-control text-center" value="$19.99" /></p>
+                      </div>
+                      <div class="col-6">
+                        <p class="price"><input type="text" class="form-control text-center" value="20 items" /></p>
+
+                      </div>
+
+                    </div>
                     <p>Some text about the jeans.</p>
-                    <a href="service-detail.html"  class="btn btn-primary btn-round">Book Now</a>
                   </div>
                 </div>
               </div>
@@ -225,13 +278,22 @@
                 <div class="card card-profile">
                   <div class="card-body">
                     <p class="card-description">
+                      <a href="service-detail.html">
                     <img src="../assets/img/faces/avatar.jpg" alt="Denim Jeans" style="width:100%">
-
+</a>
                      </p>
                     <h4 class="card-title">Alec Thompson</h4>
-                    <p class="price">$19.99</p>
+                    <div class="row">
+                      <div class="col-6">
+                        <p class="price"><input type="text" class="form-control text-center" value="$19.99" /></p>
+                      </div>
+                      <div class="col-6">
+                        <p class="price"><input type="text" class="form-control text-center" value="20 items" /></p>
+
+                      </div>
+
+                    </div>
                     <p>Some text about the jeans.</p>
-                    <a href="service-detail.html"  class="btn btn-primary btn-round">Book Now</a>
                   </div>
                 </div>
               </div>
@@ -239,13 +301,23 @@
                 <div class="card card-profile">
                   <div class="card-body">
                     <p class="card-description">
+                      <a href="service-detail.html">
                     <img src="../assets/img/faces/avatar.jpg" alt="Denim Jeans" style="width:100%">
-
+</a>
                      </p>
                     <h4 class="card-title">Alec Thompson</h4>
-                    <p class="price">$19.99</p>
+                    <div class="row">
+                      <div class="col-6">
+                        <p class="price"><input type="text" class="form-control text-center" value="$19.99" /></p>
+                      </div>
+                      <div class="col-6">
+                        <p class="price"><input type="text" class="form-control text-center" value="20 items" /></p>
+
+                      </div>
+
+                    </div>
+
                     <p>Some text about the jeans.</p>
-                    <a href="service-detail.html"  class="btn btn-primary btn-round">Book Now</a>
                   </div>
                 </div>
               </div>
@@ -291,6 +363,8 @@
        <div class="copyright float-right">
          &copy;
          <script>
+          
+          
            document.write(new Date().getFullYear())
          </script>, made with <i class="material-icons">favorite</i> by
          <a href="#" target="_blank">E-commerce</a> for a better web.
@@ -310,6 +384,23 @@
    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY_HERE"></script>
    <!-- Control Center for Material Kit: parallax effects, scripts for the example pages etc -->
    <!-- <script src="../assets/js/material-kit.js?v=2.0.6" type="text/javascript"></script> -->
+<script>
+   $(()=>{
+            $("#avalability").on("change",()=>{
+            if($("#avalability").val()=="Available on Specific Days")
+           {
+$("#selectDays").removeAttr("hidden")
+           }else{
+            $("#selectDays").attr("hidden",true)
+           }
+
+           })
+
+
+           })
+         
+</script>
+
  </body>
  
  </html>
