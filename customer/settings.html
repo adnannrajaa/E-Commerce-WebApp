@@ -127,9 +127,29 @@
                 </div>
                 <div class="tab-content tab-space">
                   <div class="tab-pane active text-center gallery" id="notify">
-                    <div class="row">
 
+                    <div class="row">
+                     <div class="col-5 mt-auto mb-auto"><h3 class="mt-0 mb-0">Get notifications on Web</h3> </div>
+                      <div class="col mt-auto mb-auto">
+                        <div class="togglebutton text-left">
+                          <label class="mb-0">
+                            <input type="checkbox" checked="">
+                            <span class="toggle"></span>
+                          </label>
+                        </div>
+                      </div>
                     </div>
+                    <div class="row">
+                      <div class="col-5 mt-auto mb-auto"><h3 class="mt-0 mb-0">Get notifications on App</h3> </div>
+                       <div class="col mt-auto mb-auto">
+                         <div class="togglebutton text-left">
+                           <label class="mb-0">
+                             <input type="checkbox" checked="">
+                             <span class="toggle"></span>
+                           </label>
+                         </div>
+                       </div>
+                     </div>
                   </div>
                   <div class="tab-pane text-center gallery" id="language">
                     <div class="row">
@@ -141,14 +161,61 @@
                      
                     </div>
                   </div>
-                  <div class="tab-pane text-center gallery" id="changePassword">
+                  <div class="tab-pane text-center gallery text-center" id="changePassword">
                     <div class="row">
-                     
+                      <div class="col-sm-4"></div>
+                      <div class="col-sm-4">
+                          <label>Current Password</label>
+                          <div class="form-group pass_show"> 
+                                  <input type="password" value="faisalkhan@123" class="form-control" placeholder="Current Password"> 
+                              </div> 
+                             <label>New Password</label>
+                              <div class="form-group pass_show"> 
+                                  <input type="password" value="faisal.khan@123" class="form-control" placeholder="New Password"> 
+                              </div> 
+                             <label>Confirm Password</label>
+                              <div class="form-group pass_show"> 
+                                  <input type="password" value="faisal.khan@123" class="form-control" placeholder="Confirm Password"> 
+                              </div> 
+                              <button class="btn btn-primary">Update Password</button>
+                      </div>  
                     </div>
                   </div>
                   <div class="tab-pane text-center gallery" id="contactUs">
-                    <div class="row">
-                     
+                    <div class="section section-contacts pt-0">
+                      <div class="row">
+                        <div class="col-md-8 ml-auto mr-auto">
+                          <h2 class="text-center title mt-0">Contact us</h2>
+                          <h4 class="text-center description">Divide details about your product or agency work into parts. Write a few lines about each one and contact us about any further collaboration. We will responde get back to you in a couple of hours.</h4>
+                          <form class="contact-form">
+                            <div class="row">
+                              <div class="col-md-6">
+                                <div class="form-group bmd-form-group">
+                                  <label class="">Your Name</label>
+                                  <input type="email" class="form-control">
+                                </div>
+                              </div>
+                              <div class="col-md-6">
+                                <div class="form-group bmd-form-group">
+                                  <label class="">Your Email</label>
+                                  <input type="email" class="form-control">
+                                </div>
+                              </div>
+                            </div>
+                            <div class="form-group bmd-form-group">
+                              <label for="exampleMessage" class="">Your Message</label>
+                              <textarea type="email" class="form-control" rows="4" id="exampleMessage"></textarea>
+                            </div>
+                            <div class="row">
+                              <div class="col-md-4 ml-auto mr-auto text-center">
+                                <button class="btn btn-primary btn-raised">
+                                  Send Message
+                                </button>
+                              </div>
+                            </div>
+                          </form>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
