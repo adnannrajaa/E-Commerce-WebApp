@@ -26,6 +26,8 @@ The above copyright notice and this permission notice shall be included in all c
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
   <!-- CSS Files -->
   <link href="../assets/css/material-dashboard.css?v=2.1.2" rel="stylesheet" />
+  <link href="../assets/css/material-kit.css?v=2.0.6" rel="stylesheet" />
+
   <!-- CSS Just for demo purpose, don't include it in your project -->
   <link href="../assets/demo/demo.css" rel="stylesheet" />
 </head>
@@ -931,6 +933,16 @@ $("#edit-event").on("click",()=>{
       });
     });
   </script>
+   <script src="../assets/js/material-kit.js?v=2.0.6" type="text/javascript"></script>
+   <script>
+     $(document).ready(function() {
+       //init DateTimePickers
+       materialKit.initFormExtendedDatetimepickers();
+ 
+       // Sliders Init
+       materialKit.initSliders();
+     });
+   </script>
 </body>
 
 </html>
