@@ -373,8 +373,27 @@ The above copyright notice and this permission notice shall be included in all c
           <div class="card-body" id="myModalBody">
             <form class="form" method="" action="#">
               <div class="form-group">
+                <select class="form-control">
+                  <option>
+                    Select type of service
+                  </option>
+                  <option>
+                    Terms of services
+                  </option>
+                  <option>
+                    Refund Policy
+                  </option>
+                  <option>
+                    Cancellation Policy
+                  </option>
+                  <option>
+                    Privacy Policy
+                  </option>
+                </select>
+              </div>
+              <div class="form-group">
                 <div class="input-group">
-                  <textarea ></textarea>
+                  <textarea id="addPolicyTA" class="w-100"></textarea>
                 </div>
               </div>
               <div class="text-center" style="margin-top: 27px;">
@@ -393,8 +412,10 @@ The above copyright notice and this permission notice shall be included in all c
 
     </div>
   </div>
-  <div class="modal fade" id="myModal2" tabindex="-1" role="dialog">
-    <div class="modal-dialog" role="document">
+  <div id="myModal2" class="modal fade w-auto" role="dialog">
+    <div class="modal-dialog">
+
+      <!-- Modal content-->
       <div class="modal-content">
         <div class="card">
           <div class="card-header card-header-primary" style="display:inline;">
@@ -404,51 +425,27 @@ The above copyright notice and this permission notice shall be included in all c
           <div class="card-body" id="myModalBody">
             <form class="form" method="" action="#">
               <div class="form-group">
-                <div class="input-group">
-                  <div class="input-group-prepend">
-                    <span class="input-group-text">
-                      <i class="material-icons">face</i>
-                    </span>
-                  </div>
-                  <input type="text" class="form-control" value="Dakota Rice">
-                </div>
+                <select class="form-control">
+                  <option>
+                    Select type of service
+                  </option>
+                  <option>
+                    Terms of services
+                  </option>
+                  <option>
+                    Refund Policy
+                  </option>
+                  <option>
+                    Cancellation Policy
+                  </option>
+                  <option>
+                    Privacy Policy
+                  </option>
+                </select>
               </div>
               <div class="form-group">
                 <div class="input-group">
-                  <div class="input-group-prepend">
-                    <span class="input-group-text">
-                      <i class="material-icons">mail</i>
-                    </span>
-                  </div>
-                  <input type="text" class="form-control" value="xyz@gmail.com">
-                </div>
-              </div>
-              <div class="form-group">
-                <div class="input-group">
-                  <div class="input-group-prepend">
-                    <span class="input-group-text">
-                      <i class="material-icons">lock_outline</i>
-                    </span>
-                  </div>
-                  <input type="password" value="36738" class="form-control">
-                </div>
-              </div>
-              <div class="form-group">
-                <div class="input-group">
-                  <div class="input-group-prepend">
-                    <span class="input-group-text">
-                      <i class="material-icons">face</i>
-                    </span>
-                  </div>
-                  <select class="form-control" >
-
-                    <option>
-                      Vendor
-                    </option>
-                    <option>
-                      Customer
-                    </option>
-                  </select>
+                  <textarea id="editPolicyTA" class="w-100"></textarea>
                 </div>
               </div>
               <div class="text-center" style="margin-top: 27px;">
@@ -464,6 +461,7 @@ The above copyright notice and this permission notice shall be included in all c
         </div>
 
       </div>
+
     </div>
   </div>
   <!--   Core JS Files   -->
@@ -505,13 +503,21 @@ The above copyright notice and this permission notice shall be included in all c
   <script src="../assets/js/plugins/chartist.min.js"></script>
   <!--  Notifications Plugin    -->
   <script src="../assets/js/plugins/bootstrap-notify.js"></script>
+  <script src="https://cdn.tiny.cloud/1/usaj2dg17wqsub78zg1irrqroaueib359ywf8r9b5gcl5awa/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
+
   <!-- Control Center for Material Dashboard: parallax effects, scripts for the example pages etc -->
   <script src="../assets/js/material-dashboard.js?v=2.1.2" type="text/javascript"></script>
   <!-- Material Dashboard DEMO methods, don't include it in your project! -->
   <script src="../assets/demo/demo.js"></script>
   <script>
-      (document).ready(function () {
-        ().ready(function () {
+ tinymce.init({
+        selector: '#addPolicyTA'
+      });
+      tinymce.init({
+        selector: '#editPolicyTA'
+      });
+      
+        (document).ready(function () {
           sidebar = ('.sidebar');
 
           sidebar_img_container = sidebar.find('.sidebar-background');
@@ -681,7 +687,7 @@ The above copyright notice and this permission notice shall be included in all c
 
           });
         });
-      });
+      
   </script>
 </body>
 
